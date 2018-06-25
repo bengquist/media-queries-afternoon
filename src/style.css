@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f8f9fa;
+  overflow: hidden;
+}
+
+.mobile-nav-btn {
+  display: none;
+}
+
+.logo {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fed136;
+  margin-top: -12px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.nav-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-panel a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.nav-panel a:hover {
+  color: #fed136;
+}
+
+.home {
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-position: center;
+  height: 80vh;
+}
+
+.heading {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 160px;
+}
+
+.heading h2{
+  font-size: 2.5em;
+}
+
+.heading h1{
+  margin-top: 0;
+  font-size: 4.5em;
+}
+
+.heading button {
+  margin: 0 auto;
+  width: 200px;
+  background: #fed136;
+  border: none;
+  color: #f8f9fa;
+  border-radius: 5px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.heading button:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav-panel{
+    display: none;
+  }
+    .nav {
+    padding-top: 10px;
+    width: 100%;
+    background: #212529;
+  }
+
+  .logo {
+    margin: 0 20px;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    margin-right: 60px;
+    margin-top: 5px;
+    height: 50px;
+    width: 100px;
+    background: #fed136;
+    border: none;
+    border-radius: 10px;
+    color: #f8f9fa;
+    font-size: 20px;
+  }
+
+  .mobile-nav-btn:focus {
+    outline: none;
+  }
+
+}
+
+@media(max-width: 768px) {
+  .home {
+    height: 50vh;
+  }
+
+  .heading {
+    margin-top: 20px;
+  }
+
+  .heading button {
+    margin-top: -40px;
+  }
+}
